@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the conference paper below."
+title: "drone_3Darea: a 3D simulation area for drone path planning under uncertainty"
+authors:
+  - family-names: Ntakolia
+    given-names: Charis
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "Uncertainty-Aware Adaptive Multi-Objective UAV Path Planning via Fuzzy Priority Adaptation and Preference-Conditioned Reinforcement Learning"
+  authors:
+    - family-names: Ntakolia
+      given-names: Charis
+    - family-names: Lyridis
+      given-names: Dimitrios
+  collection-title: "Proceedings of Drones 2026: Mapping the Knowledge"
+  conference:
+    name: "Drones 2026: Mapping the Knowledge"
+    city: Barcelona
+    date-start: 2026-11-11
+    date-end: 2026-11-13
+  publisher:
+    name: MDPI
+    city: Basel
+    country: CH
+  year: 2026
+  url: "https://sciforum.net/paper/37525"
