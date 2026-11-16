@@ -208,6 +208,7 @@ class DroneEnv3D:
         self._rays_obs_m = rays * cfg.ray_max_range
 
         sensed = self._sense_traffic()
+        self._last_sensed = list(sensed)      # traffic tracks of this step, for planners that read them directly
         self.uncertainty.feed_tracks3d([(tid, sx, sy, sz) for tid, sx, sy, sz, _ in sensed], cfg.dt)
 
         tw = getattr(self, "_true_wind", (0.0, 0.0))

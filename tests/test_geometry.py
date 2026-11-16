@@ -44,7 +44,7 @@ def test_environment_runs_in_every_family():
 
 
 def test_real_areas_load():
-    for name in ("saronic", "south_evia"):
+    for name in ("saronic", "south_evia", "thermaikos"):
         area = load_area(name)
         env = area.make_env(seed=0)
         obs = env.reset()

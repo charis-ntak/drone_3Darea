@@ -53,7 +53,7 @@ env = area.make_env(seed=1)
 obs = env.reset()
 ```
 
-`python examples/demo.py` flies a simple reactive pilot in a tactical world and in both real areas and
+`python examples/demo.py` flies a simple reactive pilot in a tactical world and in the real areas and
 writes the route figures to `output/`.
 
 ## Tactical worlds
@@ -71,6 +71,7 @@ altitudes are drawn at every reset.
 |---|---|---|
 | `saronic` | Piraeus to Aegina, 29.4 km over water between the Athens zones and Aegina | airspace zones, terrain, wind of 30 August 2026 |
 | `south_evia` | Marmari to Karystos, 9.5 km across hilly terrain | terrain, wind of 16 November 2026 |
+| `thermaikos` | Thessaloniki port to Angelochori, 18.2 km across the gulf; the straight line cuts the Thessaloniki control zone | airspace zone, terrain, wind of 16 November 2026 |
 
 Each area combines three layers, all cached in `drone_3darea/data` so that runs are offline and
 reproducible:

@@ -1,4 +1,4 @@
-"""Fly the reactive pilot in a tactical world and in the two real areas, and save 3D route figures.
+"""Fly the reactive pilot in a tactical world and in the real areas, and save 3D route figures.
     python examples/demo.py
 """
 import os
@@ -20,7 +20,7 @@ print(f"tactical mixed, level 2: success {m.success}, path {m.path_length:.0f} m
 plot_routes(env, [dict(label="reactive pilot", xyz=m.trajectory)], "output/tactical_mixed.png",
             "Tactical world, mixed topology, uncertainty level 2")
 
-for name in ("saronic", "south_evia"):
+for name in ("saronic", "south_evia", "thermaikos"):
     area = load_area(name)
     env = area.make_env(seed=1)
     m = fly(env)

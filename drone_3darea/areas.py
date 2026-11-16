@@ -38,6 +38,8 @@ AREAS: Dict[str, dict] = {
                     margin_deg=0.10, note="medical delivery over water, between the Athens zones and Aegina"),
     "south_evia": dict(title="Marmari to Karystos, south Evia", start=(38.0480, 24.3200), goal=(38.0160, 24.4210),
                        margin_deg=0.10, note="coastal inspection sortie across hilly terrain"),
+    "thermaikos": dict(title="Thessaloniki port to Angelochori, Thermaikos Gulf", start=(40.6320, 22.9350), goal=(40.4930, 22.8200),
+                       margin_deg=0.10, note="gulf crossing whose straight line cuts the Thessaloniki control zone"),
 }
 
 
